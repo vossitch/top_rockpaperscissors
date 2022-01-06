@@ -1,0 +1,25 @@
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    margin: 5px;
+}
+
+.roundresults {
+    display: flex;
+    padding: 2px;
+    /*border: solid 2px rgb(135, 112, 218);*/
+    
+}
+
+p {
+    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24;
+    text-align: center;
+    color: orangered;
+    /*border: solid 2px orchid;*/
+}
