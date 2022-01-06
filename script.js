@@ -76,8 +76,14 @@ function playerPrompt() {
 
 //Function to create a game of first to 5 wins
 function game() {
-    while (playerWins < 5 || computerWins < 5) {
-       let round = playRound(playerChoice(), computerSelection);
+    while (playerWins != 5 || computerWins != 5) {
+       if (playerWins == 5 || computerWins == 5)
+       {
+           console.log ("Game over!")
+       }
+       else 
+       {
+        let round = playRound(playerPrompt(), computerSelection);
        console.log ("The computer selected - " + computerSelection);
        console.log ("Round result is " + round);
         if (round == "computer")
@@ -92,7 +98,8 @@ function game() {
        {
            console.log ("No-one wins this time around");
        }
-    break
+       break
+       }
     }
 }
 
